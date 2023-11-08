@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawsome/all.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousal/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousal/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    </head>
+    <body>
+        <!--Loader-->
+        <div class="preloader-area d-flex justify-content-center align-items-center" style="display: none;" >
+          <div class="spinner">
+              <i class="plan text-center fa-solid fa-plane text-maincolor mx-2 my-2" aria-hidden="true"></i>
+              <h2 class="fs-6 fw-bold">V-Travel</h2>
+          </div>
+      </div>
+        <!-- Start Navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top z-2">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img class="w-50" src="assets/img/logo.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                  <li class="nav-item me-2">
+                    <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                  </li>
+                  <li class="nav-item me-2">
+                    <a class="nav-link" href="#places">Places</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="nav-link" href="#clients">Clients</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a class="nav-link" href="#contactUs">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Scroll-->
+          <div class="scroll-to-top position-fixed bg-maincolor text-white rounded-circle d-flex justify-content-center align-items-center opacity-0 invisiple">
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+        <!-- Start Header-->
+        <header class="header vh-100 text-white" id="header">
+          <div class="header-content d-flex flex-column justify-content-center vh-100 align-items-center">
+            <h1>Enjoy vacation with <span>v-travel</span></h1>
+            <p>Travel to the any corner of the world, without going around in circles.</p>
+            <a href="" download="" class="border border-main-color text-white rounded-pill text-decoration-none text-capitalize px-5 py-3 mt-2 bg-maincolor">Book A Tour</a>
+          </div>
+          </header>
+          <!-- Start Places-->
+          <section class="places mt-5 pb-5" id="places">
+            <div class="container">
+                <h1>popular tour places</h1>
+                <div class="places-btns d-flex justify-content-end align-items-center column-gap-2">
+                 <a class="prev-btn bg-maincolor" href="#"><i class="fa-solid fa-chevron-left p-3 text-white fs-6"></i></a>
+                  <a class="next-btn bg-maincolor" href="#"><i class="fa-solid fa-chevron-right p-3 text-white fs-6"></i></a>
+                </div>
+                <div class="owl-carousel owl-theme row my-3" id="first-carousel">
+                    <div class="item">
+                        <div class="place-desc bg-white pb-3 mx-1">
+                            <img src="assets/img/place1.jpg"/>
+                                <h2 class="m-3 text-capitalize">cox's bazar sea beach</h2>
+                                <h3 class="px-3">chitagong, bangladesh</h3>
+                                <h4 class="my-3 px-3">2200$<span>3200$</span></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="place-desc bg-white pb-3 mx-1">
+                            <img src="assets/img/place2.jpg"/>
+                                <h2 class="m-3 text-capitalize">Nice building</h2>
+                                <h3 class="px-3">dhaka,bangladesh</h3>
+                                <h4 class="my-3 px-3">2344$<span>3200$</span></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="place-desc bg-white pb-3 mx-1">
+                            <img src="assets/img/place3.jpg"/>
+                            <h2 class="m-3 text-capitalize">sundorban bromon</h2>
+                            <h3 class="px-3">australia</h3>
+                            <h4 class="my-3 px-3">1290$<span>3200$</span></h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="place-desc bg-white pb-3 mx-1">
+                            <img src="assets/img/place4.jpg"/>
+                            <h2 class="m-3 text-capitalize">sundorban bromon</h2>
+                            <h3 class="px-3">australia</h3>
+                            <h4 class="my-3 px-3">1290$<span>3200$</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <section class="company-designed-area m-5 bg-white p-5">
+            <div class="container">
+              <div class="owl-carousel owl-theme m-5" id="second-carousel">
+                <div class="item w-60"><img src="assets/img/c1.png"/></div>
+                <div class="item w-60"><img src="assets/img/c2.png"/></div>
+                <div class="item w-60"><img src="assets/img/c3.png"/></div>
+                <div class="item w-60"><img src="assets/img/c4.png"/></div>
+                <div class="item w-60"><img src="assets/img/c5.png"/></div>
+                <div class="item w-60"><img src="assets/img/c6.png"/></div>
+            </div>
+
+          </section>
+          <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+          <script src="vendor/Jquery/jquery-3.6.3.min.js"></script>
+          <script src="vendor/owlcarousal/js/owl.carousel.min.js"></script>
+          <script src="assets/js/main.js"></script>
+    </body>
+</html>
