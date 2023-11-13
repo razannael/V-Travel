@@ -4,6 +4,7 @@ const headercontentspan = document.querySelector('.header-content span')
 const scrolltotopbtn = document.querySelector('.scroll-to-top')
 const placessection = document.querySelector('.places')
 const loading = document.querySelector('.preloader-area')
+const aboutSection = document.querySelector('.about')
 window.addEventListener('scroll', function(){
     if(window.scrollY > headercontentspan.offsetTop) {
         navbar.style.backgroundColor = "#333"
@@ -39,9 +40,6 @@ window.addEventListener('load', function(){
       document.body.overflow = 'auto'
     }, 1000)
 })
-
-
-
 
 
 
@@ -110,4 +108,48 @@ owlTwo.owlCarousel({
         }
     }
 });
+// owl carousal started for section clients
+var owlThree = $("#Third-carousel")
+owlThree.owlCarousel({
+    dots:true,
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        900:{
+            items:3
+        }
+    }
+});
 })
+
+$(".about img").animate({"width":"100%"},3000)
+$(".about h2").slideDown(1000 ,function(){
+    $(".about p").slideDown(1000 , function(){
+        $(".about a").animate({"width":"30%"}).slideDown(500)
+    })
+})
+
+$("#item1").slideDown(1000 , function(){
+    $("#item2").slideDown(1000 , function(){
+        $("#item3").slideDown(1000 , function(){
+            $("#item4").slideDown(1000 , function(){
+                $("#item5").slideDown(1000 , function(){
+                    $("#item6").slideDown(1000)
+                })
+            })
+        })
+    })
+})
+
+$(".travelling-highlights a").slideToggle(1000)
+$(".travelling-highlights h2").slideToggle(1000)

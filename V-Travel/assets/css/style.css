@@ -32,6 +32,8 @@ body {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    position: absolute;
+    z-index: 1;
 }
 .preloader-area {
     position: fixed;
@@ -152,3 +154,292 @@ font-weight: 700;
     background-color: black;
     margin-top: 10px;
 }
+
+/* Start About */
+.about h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.about h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.about p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+.about a{
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.about a:hover{
+    color:#333333 !important;
+    background-color: transparent !important;
+    border-color: var(--maincolor) !important;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.about h2 , .about p , .about a{
+    display: none;
+}
+.about img{
+    width: 0%;
+}
+/* Start Services */
+.services i{
+    font-size: 40px;
+}
+.services h4{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+.services p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.services .service-item{
+    background-color: #f9f9f9 !important;
+    display: none;
+}
+/* Start travelling-highlights */
+.travelling-highlights {
+    background: linear-gradient(rgba(3, 3, 3, 0.596),rgba(3, 3, 3, 0.644)) , url(../img/youtube.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.travelling-highlights a, .travelling-highlights h2{
+    display: none;
+}
+.travelling-highlights h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+/* Start Gallery */
+.gallery .project-item{
+    position: relative;
+    
+}
+.gallery a{
+    position: relative;
+    transition: transform .2s; /* Animation */
+}
+
+.gallery h2{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    z-index: 1;
+}
+.gallery img{
+    width: 100%;
+}
+.gallery h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.gallery a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+    z-index: 1;
+    height: 0;
+
+    }
+    .gallery a:hover::before{
+        height: 100%;
+    }
+
+
+    /* Start Client */
+
+    .clients{
+        position: relative;
+    }
+    .clients h1{
+        font-size: 30px;
+        font-weight: 700;
+        color: #333333;
+    }
+    .clients p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 28px;
+        clear: #333;
+    }
+    .clients h2{
+        color: #fff;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .clients h3{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .clients .message{
+        position: relative;
+    }
+        .clients .message::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            margin-left: 30px;
+            margin-bottom: -12px;
+            transform: rotate(45deg);
+        }
+
+
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+          background: rgb(248, 216, 100);
+        }
+        .owl-theme .owl-dots .owl-dot span {
+          width: 5px;
+          height: 5px;
+          margin: 5px 7px;
+          background: #D6D6D6;
+          display: block;
+          -webkit-backface-visibility: visible;
+          transition: opacity .2s ease;
+          border-radius: 30px;
+        }
+
+
+        /*Start Team */
+
+        .team h1{
+            font-size: 30px;
+            color: #333;
+            font-weight: 700;
+        }
+        .team img{
+            width: 100%;
+        }
+        .team h3{
+            font-size: 22px;
+            color: #000000;
+            font-weight: 400;
+        }
+        .team h4{
+            font-size: 15px;
+            color: #000000;
+            font-weight: 300;
+        }
+        .team p{
+            font-size: 15px;
+            color: #000000;
+            font-weight: 300;
+        }
+
+        /* Start Call Area */
+        .call-area{
+            background: linear-gradient(rgba(0, 0, 0, 0.466),rgba(0, 0, 0, 0.527)) , url(../img/mainbg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 500px;
+        }
+        .call-area h1{
+            font-size: 40px;
+            font-weight: 900;
+            color: #fff;
+        }
+        .call-area p{
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .call-area a{
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            padding-right: 28px;
+            padding-left: 28px;
+        }
+        .call-area a:hover{
+            background-color: transparent;
+            border-color: #fff;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+        }
+
+        /* Start Contact Us */
+        .contact-us h2{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .contact-us h3{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .contact-us p{
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .contact-us i{
+            font-size: 19px;
+        }
+        .contact-us a:hover {
+         background-color: var(--maincolor) !important;
+        }
+        .contact-us a:hover i{
+            color: #fff !important;
+           }
+        .contact-us input:focus ,.contact-us textarea:focus {
+            border: 1px solid var(--maincolor) !important;
+            box-shadow: none;
+        }
+        .w-96{
+            width: 96%;
+        }
+
+        .contact-us .contact-btn {
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            padding-right: 28px;
+            padding-left: 28px;
+        }
+        .contact-us .contact-btn:hover{
+            background-color: transparent !important;
+            border-color: var(--maincolor) !important;
+            color: #000000 !important;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+        }
+        footer{
+            background-color: #333;
+        }
+        footer h2{
+            font-size: 16px;
+            font-weight: 300;
+        }
